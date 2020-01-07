@@ -1,8 +1,4 @@
-.item-a{
-    grid-area: drawArea;
-}
-
-.container{
+#container{
     border-width: 0;
     display: grid;
     border-style: groove;
