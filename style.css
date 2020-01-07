@@ -1,0 +1,11 @@
+.item-a{
+    grid-area: drawArea;
+}
+
+.container{
+    border-width: 0;
+    display: grid;
+    border-style: groove;
+    grid-template-columns: repeat(16,minmax(auto, auto));
+    grid-template-rows: repeat(16,minmax(57px, auto));
+}
