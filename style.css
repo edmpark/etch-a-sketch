@@ -5,3 +5,7 @@
     grid-template-columns: repeat(16,minmax(auto, auto));
     grid-template-rows: repeat(16,minmax(57px, auto));
 }
+
+#clear{
+    text-align: center;
+}
