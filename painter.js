@@ -22,20 +22,13 @@ function deleteAllGridItem(){
 
 function createGridItems(sideSquareNum){
     deleteAllGridItem();
-    pixelNum=900/sideSquareNum;
     document.documentElement.style.setProperty("--gridLength", sideSquareNum);
     for(var i = 0; i<sideSquareNum*sideSquareNum; i++){
         container.innerHTML+=createDivTemplate('gridItem');
     }
 }
 
-function newGrid(gridWidth, gridHeight){
-    deleteAllGridItem();
-    container.style.gridTemplateColumns="";
-    let rowAmount = 723/gridHeight;
-    container.style.setProperty('grid-template-columns', 'repeat('+gridWidth+', minmax(auto, auto))');
-    createGridItems(gridWidth, gridHeight);
-}
+
 
 
 
