@@ -1,10 +1,18 @@
-#container{
-    border-width: 0;
-    display: grid;
-    border-style: groove;
-    grid-template-columns: repeat(16,minmax(auto, auto));
-    grid-template-rows: repeat(16,minmax(57px, auto));
+:root{
+    --gridLength: 16;
 }
+
+#container{
+    height: 900px;
+    width: 900px;
+    border-width: 1;
+    display: grid;
+    border-style: solid;
+    margin: 50px auto;
+    grid-template-columns: repeat(var(--gridLength), 1fr);
+    grid-template-rows: repeat(var(--gridLength), 1fr);
+}
+
 
 #clear{
     text-align: center;
